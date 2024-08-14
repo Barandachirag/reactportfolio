@@ -1,0 +1,61 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  img {
+    width: 150px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+  }
+  
+  .nav-connect {
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .nav-connect:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Define light and dark mode variables */
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+  }
+  
+  .dark-mode {
+    --bg-color: #333333;
+    --text-color: #ffffff;
+  }
+  
+  /* Optional: you can add more dark mode styles */
+  .dark-mode .navbar {
+    background-color: #161513;
+  }
+  
+  .dark-mode .nav-menu li {
+    color: #ffffff;
+  }
+  
+  .dark-mode .nav-connect {
+    background-color: #555555;
+    color: #ffffff;
+  }
+  
